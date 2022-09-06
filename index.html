@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="#" alt="Ecommerce">
+            </div>
+            <div class="search">
+                <input type="search" name="search" id="search" placeholder="Search">
+            </div>
+            <div class="cart">
+                <button>Cart</button>
+            </div>
+            <div class="login-logout">
+                <button>
+                    Login
+                </button>
+                <button>
+                    Logout
+                </button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-container">
+            <div class="dropdown">
+                <p class="drp">Mobile</p>
+                <div class="list">
+                    <p>Mobile</p>
+                    <p>list 2</p>
+                    <p>list 3</p>
+                    <p>list 4</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="drp">Laptops</p>
+                <div class="list">
+                    <p>Laptops</p>
+                    <p>list 2</p>
+                    <p>list 3</p>
+                    <p>list 4</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="drp">Tablet</p>
+                <div class="list">
+                    <p>Tablet</p>
+                    <p>list 2</p>
+                    <p>list 3</p>
+                    <p>list 4</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="drp">Acessories</p>
+                <div class="list">
+                    <p>Acessories</p>
+                    <p>list 2</p>
+                    <p>list 3</p>
+                    <p>list 4</p>
+                </div>
+            </div>
+
+
+        </div>
+    </nav>
+    <main>
+        <div class="main-container">
+            <div class="product">
+                <img src="https://5.imimg.com/data5/TK/MV/MY-18634037/home-care-cleaning-products-formulation-consulting-1000x1000.jpg"
+                    alt="home" width="200px" height="auto">
+                <p>Home Products</p>
+                <div class="details">
+                    <p>price : 100₹</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://5.imimg.com/data5/TK/MV/MY-18634037/home-care-cleaning-products-formulation-consulting-1000x1000.jpg"
+                    alt="home" width="200px" height="auto">
+                <p>Home Products</p>
+                <div class="details">
+                    <p>price : 100₹</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://5.imimg.com/data5/TK/MV/MY-18634037/home-care-cleaning-products-formulation-consulting-1000x1000.jpg"
+                    alt="home" width="200px" height="auto">
+                <p>Home Products</p>
+                <div class="details">
+                    <p>price : 100₹</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://5.imimg.com/data5/TK/MV/MY-18634037/home-care-cleaning-products-formulation-consulting-1000x1000.jpg"
+                    alt="home" width="200px" height="auto">
+                <p>Home Products</p>
+                <div class="details">
+                    <p>price : 100₹</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://5.imimg.com/data5/TK/MV/MY-18634037/home-care-cleaning-products-formulation-consulting-1000x1000.jpg"
+                    alt="home" width="200px" height="auto">
+                <p>Home Products</p>
+                <div class="details">
+                    <p>price : 100₹</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://5.imimg.com/data5/TK/MV/MY-18634037/home-care-cleaning-products-formulation-consulting-1000x1000.jpg"
+                    alt="home" width="200px" height="auto">
+                <p>Home Products</p>
+                <div class="details">
+                    <p>price : 100₹</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+        document.addEventListener("click", function (event) {
+            document.querySelectorAll(".list").forEach(function (dd) {
+                dd.classList.remove("show");
+            });
+            if (event.target.classList.contains("drp")) {
+                event.target.nextElementSibling.classList.toggle("show");
+            }
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>
